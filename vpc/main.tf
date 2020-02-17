@@ -20,7 +20,7 @@ resource "aws_subnet" "public_subnet_1" {
 }
 
 resource "aws_subnet" "public_subnet_2" {
-  vpc_id            = "{aws_vpc.project1.id}"
+  vpc_id            = "${aws_vpc.project1.id}"
   cidr_block        = "${var.VPC_PUBLIC_SUBNET2_CIDR_BLOCK}"
   availability_zone = "${data.aws_availability_zones.available.names[1]}"
   tags = {
