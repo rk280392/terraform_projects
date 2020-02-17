@@ -16,3 +16,11 @@ variable "PUBLICLY_ACCESSIBLE" {}
 variable "RDS_USERNAME" {}
 variable "RDS_PASSWORD" {}
 
+variable "SSH_CIDR_APP_SERVER" {}
+variable "SSH_CIDR_WEB_SERVER" {}
+variable "USER_DATA_FOR_WEBSERVER" {}
+variable "PEM_FILE_WEBSERVERS" {}
+variable "PEM_FILE_APPSERVERS" {}
+variable "WEB_SERVER_INSTANCE_TYPE" {}
+variable "APP_SERVER_INSTANCE_TYPE" {}
+variable "USER_DATA_FOR_APPSERVER" {}
